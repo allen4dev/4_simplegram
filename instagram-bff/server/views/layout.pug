@@ -4,13 +4,50 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title= title
+    link(rel="stylesheet", href="/index.css")
+    title= title || h.siteName
   body
     block header
-      header.Header Header comes here
+      header.Header
+        .Logo
+          h1.Logo-title Instagram
+        form.SearchBar(action="")
+          input.SearchBar-input(type="text" placeholder="Search...")
+        .Header-actions
+          if user
+            a(href="#") ⭐
+            a(href="#") 💗
+            a(href="#") 🤕
+            a(href="#") Signout
+          else
+            a(href="#" class="link") Signin
+            a(href="#" class="link") Signup
 
     block content
       section.Content comes here
 
     block footer
-      footer.Footer comes here
+      footer.Footer
+        ul.Footer-list
+          li.Footer-item
+            a.Footer-link.link(href="#") Informacion
+          li.Footer-item
+            a.Footer-link.link(href="#") Asistencia
+          li.Footer-item
+            a.Footer-link.link(href="#") Blog
+          li.Footer-item
+            a.Footer-link.link(href="#") Prensa
+          li.Footer-item
+            a.Footer-link.link(href="#") Api
+          li.Footer-item
+            a.Footer-link.link(href="#") Empleo
+          li.Footer-item
+            a.Footer-link.link(href="#") Privacidad
+          li.Footer-item
+            a.Footer-link.link(href="#") Condiciones
+          li.Footer-item
+            a.Footer-link.link(href="#") Directorio
+          li.Footer-item
+            a.Footer-link.link(href="#") Idioma
+
+        p © 2017 Instagram

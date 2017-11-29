@@ -1,0 +1,102 @@
+:root {
+  --lightgray: #fafafa;
+  --gray: #a5a7aa;
+  --blue: #3897f0;
+
+  --font-small: 0.8em;
+  --font-normal: 1em;
+  --font-medium: 1.2em;
+  --font-big: 1.5em;
+
+  --space-small: 0.5em;
+  --space-normal: 1em;
+  --space-medium: 1.5em;
+  --space-big: 2em;
+
+  --header-size: 4em;
+  --footer-size: 4em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--lightgray);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: black;
+  padding: var(--space-small);
+  text-decoration: none;
+  /* font-size: var(--font-medium); */
+}
+
+/* Header */
+.Header {
+  /* border: 4px solid red; */
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: var(--header-size);
+  padding: 0 var(--space-big);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.SearchBar-input {
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  font-size: var(--font-normal);
+  padding: var(--space-small);
+  width: 100%;
+}
+
+.Footer {
+  height: var(--footer-size);
+  padding: 0 var(--space-big);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Footer-list {
+  display: flex;
+}
+
+.Footer-link {
+  margin: var(--space-small);
+}
+/* Header */
+
+/* Home */
+
+.Home {
+  margin-top: var(--header-size);
+}
+/* Home */
