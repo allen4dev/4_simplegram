@@ -1,5 +1,7 @@
 const express = require('express');
 
+const router = require('./router');
+
 const appMiddleware = require('./middlewares/appMiddleware');
 const errorHandlerMiddleware = require('./middlewares/errorHandlerMiddleware');
 
@@ -10,10 +12,7 @@ app.set('view engine', 'pug');
 
 appMiddleware(app);
 
-app.get('/', (req, res, next) => {
-  // res.render('index', { title: 'BFF simple starter' });
-  next(new Error('Something goes wrong'));
-});
+app.use('/', router);
 
 app.use(errorHandlerMiddleware);
 
