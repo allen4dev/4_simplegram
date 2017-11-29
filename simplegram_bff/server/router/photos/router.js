@@ -4,6 +4,6 @@ const controller = require('./controller');
 
 const router = Router();
 
-router.get('/', controller.getPhotos);
+router.route('/:id').get(controller.getPhoto);
 
 module.exports = router;

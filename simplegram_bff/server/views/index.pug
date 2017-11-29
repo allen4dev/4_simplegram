@@ -3,5 +3,6 @@ extends layout
 include mixins/_photoList
 
 block content
-  div.Home
-    +photoList([1, 2, 3, 4, 5, 6])
+  div.Home.container
+    h2.Home-title.title Popular photos
+    +photoList(new Array(15).fill({}))

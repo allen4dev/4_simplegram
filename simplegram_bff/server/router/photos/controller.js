@@ -1,3 +1,3 @@
-exports.getPhotos = (req, res, next) => {
-  res.send({ it: 'works' });
+exports.getPhoto = (req, res, next) => {
+  res.render('photoDetail');
 };

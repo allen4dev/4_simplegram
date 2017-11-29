@@ -3,4 +3,4 @@ include _photo
 mixin photoList(list = [])
   .PhotoList
     each photo in list
-      +photo({src: 'noImage.png', title: 'Title of photo'})
+      +photo({src: null, title: 'Title of photo'})

@@ -1,0 +1,8 @@
+mixin userAvatar(user = {})
+  div.UserAvatar
+    div.UserAvatar-imageContainer.avatar
+      img.UserAvatar-image(src=`/${user.avatar || 'default_image.png'}`, alt=user.username)
+    
+    div.UserAvatar-info
+      span.UserAvatar-username= user.username
+      a.UserAvatar-follow.link.link-blue(href="#") Seguir

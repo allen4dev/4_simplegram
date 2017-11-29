@@ -1,3 +1,4 @@
 mixin photo(photo = {})
-  .Photo
-    span Photo here
+  article.Photo
+    a.Photo-link(href="/photos/123")
+      img.Photo-image(src=`/${photo.src || 'default_image.png'}`, alt=photo.title)

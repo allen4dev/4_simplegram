@@ -1,0 +1,20 @@
+extends layout
+
+include mixins/_photo
+include mixins/_userAvatar
+include mixins/_commentList
+
+block content
+  div.PhotoDetail.container
+    h2.PhotoDetail.title Hi
+
+    .PhotoDetail-content
+      .PhotoDetail-photo
+        +photo({src: null, title: 'A random photo'})
+
+      section.PhotoDetail-info
+        .PhotoDetail-description
+          +userAvatar({ src: null, username: 'allen4dev'})
+          +commentList(new Array(9).fill({}))
+
+

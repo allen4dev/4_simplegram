@@ -1,0 +1,9 @@
+include _comment
+
+mixin commentList(comments = [])
+  section.CommentList
+    if comments.length
+      each comment in comments
+        +comment(comment)
+    else
+      p.text No comments for this photo.
