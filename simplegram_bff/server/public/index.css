@@ -150,6 +150,26 @@ body {
 }
 /* Photo */
 
+/* CommentList */
+.CommentList {
+  padding: var(--space-normal) var(--space-small);
+}
+/* CommentList */
+
+/* Comment */
+.Comment {
+  display: flex;
+}
+
+.Comment:not(:last-child) {
+  margin-bottom: var(--space-normal);
+}
+
+.Comment-username {
+  font-weight: bold;
+}
+/* Comment */
+
 /* UserAvatar */
 .UserAvatar {
   display: flex;

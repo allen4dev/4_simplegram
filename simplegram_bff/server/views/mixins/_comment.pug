@@ -1,3 +1,4 @@
 mixin comment(comment = {})
   div.Comment
-    span comment here
+    //- p.Comment-text= `${comment.user.username}: ${comment.text}`
+    p.Comment-text #[span.Comment-username= comment.user.username] #{comment.text}
